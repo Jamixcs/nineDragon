@@ -1,0 +1,10 @@
+body{
+    margin: 0;
+    background-color: #FFF0F5;
+}
+div[class$="section"]{
+    border:3px solid #F0E68C;
+}
+h1{
+    color:red;
+}
