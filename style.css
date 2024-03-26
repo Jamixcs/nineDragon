@@ -12,6 +12,16 @@ div[class$="section"]{
 .first-section .container .box{
   display: flex;
 }
+.box{
+    border: 2px solid #FFA07A;
+    height: 200px;
+    width: 200px;
+}
+.square{
+    width: calc(200px / 3);
+    height: calc(200px / 3);
+    background-color: #778899;
+}
 .first-section .container:nth-child(2) .box{
   justify-content: center;
 }
@@ -28,13 +38,20 @@ div[class$="section"]{
       flex-wrap:wrap; 
 /*  align-items: end; */
 }
-.box{
-    border: 2px solid #FFA07A;
-    height: 200px;
-    width: 200px;
-}
-.square{
-    width: calc(200px / 3);
-    height: calc(200px / 3);
-    background-color: #778899;
-}
+
+.second-section .container:nth-child(2) .box {
+    text-align: center;
+  }
+  .second-section .container:nth-child(3) .box {
+    text-align: end;
+  }
+  .second-section .container .box:nth-child(2) {
+    line-height: calc(200px - 4px);
+    /* display: table-cell;
+    vertical-align: center; */
+  }
+  .second-section .container .box:nth-child(3) {
+    display: table-cell;
+    vertical-align: bottom;
+  }
+  
